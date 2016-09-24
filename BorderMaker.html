@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Чтение из элементов формы</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<style>
+td {border: 2px solid #000000}
+</style>
+</head>
+
+<body style="text-align: center">
+<h1>Чтение из элементов формы</h1>
+<h3>Демонстрация, как считывать данные из элементов формы</h3>
+
+<form method = "post" action = "BorderMaker.php">
+<h3>Для текст:</h3>
+<textarea name = "basicText" rows = "10" cols = "40">
+<pre>
+Арго! Да пошлет нам небо
+Путь с луной и звездами.
+Арго! Если сникнет парус,
+Мы ударим веслами.
+Что ж, в конце концов,
+Путь - вся цель гребцов.
+Вот, что нам открыли
+Зимы с вёснами.
+Что ж, в конце концов,
+Путь - вся цель гребцов.
+Вот, что нам с тобой открыли
+Зимы с вёснами.
+</pre>
+</textarea>
+
+<h3>Выбери:</h3>
+<table style = "margin:0 auto; border: 2px solid #000000">
+<tr>
+<td><h3>Стиль границ</h3></td>
+<td colspan = 2><h3>Размер границ</h3></td>
+<td colspan = 2><h3>Цвет границ</h3></td>
+</tr>
+
+<tr>
+<td>
+<select name = borderStyle>
+<option value = "ridge">solid</option>
+<option value = "ridge">ridge</option>
+<option value = "groove">groove</option>
+<option value = "double">double</option>
+<option value = "inset">inset</option>
+<option value = "outset">outset</option>
+</select>
+</td>
+
+<td>
+<select name = borderSize>
+<option value = "1">1</option>
+<option value = "2">2</option>
+<option value = "3">3</option>
+<option value = "5">5</option>
+<option value = "10">10</option>
+</select>
+</td>
+
+<td style = "text-align: left">
+<input type = "radio" name = "sizeType" value = "px">pixels<br>
+<input type = "radio" name = "sizeType" value = "pt">points<br>
+<input type = "radio" name = "sizeType" value = "cm">centimeters<br>
+<input type = "radio" name = "sizeType" value = "in">inches<br>
+</td>
+
+<td>
+<div style = "color:red">Красный</div><br>
+<div style = "color:green">Зеленый</div><br>
+<div style = "color:blue">Синий</div><br>
+</td>
+
+<td>
+<input type = "range" name = "borderColorR" min = "0" max = "255" step = "1"/><br>
+<input type = "range" name = "borderColorG" min = "0" max = "255" step = "1"/><br>
+<input type = "range" name = "borderColorB" min = "0" max = "255" step = "1"/><br>
+</td>
+</tr>
+</table>
+
+<br><input type = "submit" value = "Покажи!">
+</form>
+</body>
+</html>
