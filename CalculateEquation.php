@@ -7,7 +7,7 @@
 
 <body>
 <h1>Вычисление уравнения типа:</h1>
-<img src="calculation.png">
+<img src="https://raw.githubusercontent.com/sMiTeOne/PHP/master/CalculateEquation.png">
 
 <?php
 if (filter_has_var (INPUT_GET, "n"))
